@@ -8,7 +8,7 @@
 
 </script>
 
-<Navbar class="bg-purple-700">
+<Navbar class="bg-purple-700" style="height: 9vh;">
 	<NavBrand href="/">
 		<p class="text-3xl font-bold text-white">Nom trop stylé++</p>
 	</NavBrand>
