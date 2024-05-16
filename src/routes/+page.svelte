@@ -10,14 +10,15 @@
             <Gizmo />
             <T.PerspectiveCamera
               makeDefault
-              position={[20, 20, 20]}
+              position={[-2, 10, -20]}
               fov={36}
               target={[0, 0, 0]}
+              zoom={3}
             >
               <OrbitControls/>
             </T.PerspectiveCamera>
             <T.AmbientLight intensity={5} color={"red"}/>
-            <Grid type={"polar"} maxRadius={5}/>
+            <Grid type={"polar"} maxRadius={3}/>
             <GLTF url={"/female_base_mesh/scene.gltf"} />
         </Canvas>
     </div>
