@@ -1,0 +1,11 @@
+Model Information:
+* title:	Male base mesh
+* source:	https://sketchfab.com/3d-models/male-base-mesh-427fc72a505140abbd56451d692a3734
+* author:	bhagath2005 (https://sketchfab.com/bhagath2005)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Male base mesh" (https://sketchfab.com/3d-models/male-base-mesh-427fc72a505140abbd56451d692a3734) by bhagath2005 (https://sketchfab.com/bhagath2005) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
