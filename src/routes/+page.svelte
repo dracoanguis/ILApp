@@ -12,14 +12,15 @@
               makeDefault
               position={[-2, 10, -20]}
               fov={36}
-              target={[0, 0, 0]}
-              zoom={3}
+              target={[0, 5, 0]}
+              zoom={2.5}
             >
-              <OrbitControls/>
+              <OrbitControls autoRotate enableDamping/>
             </T.PerspectiveCamera>
-            <T.AmbientLight intensity={5} color={"red"}/>
+            <T.AmbientLight intensity={2} />
+            <T.DirectionalLight position={[1, 10, 1]} color={"blue"} intensity={20} />
             <Grid type={"polar"} maxRadius={3}/>
-            <GLTF url={"/female_base_mesh/scene.gltf"} />
+            <GLTF url={"/female_base_mesh/scene.gltf"} castShadow/>
         </Canvas>
     </div>
     <div class="half flex justify-center">
