@@ -30,6 +30,6 @@
   <OrbitControls autoRotate enableDamping />
 </T.PerspectiveCamera>
 <T.AmbientLight intensity={3} color={"lightBlue"} />
-<T.DirectionalLight position={[4, 10, 4]} color={"lightBlue"} intensity={20} />
+<T.DirectionalLight position={[4, 10, 4]} color={"lightBlue"} intensity={10} />
 <Grid type={"polar"} maxRadius={3} />
 <GLTF url="{model_path[modelIndex]}" castShadow />

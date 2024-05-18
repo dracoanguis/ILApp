@@ -12,11 +12,11 @@
     }
 </script>
 
-<div class="flex justify-stretch h-full bg-slate-100">
-    <div class="half">
-        <ButtonGroup class="m-8">
-            <GradientButton color="purpleToBlue" on:click={() => setModel(0)}>Femme</GradientButton>
-            <GradientButton color="cyanToBlue" on:click={() => setModel(1)}>Homme</GradientButton>
+<div class="flex justify-stretch h-full bg-slate-100 relative">
+    <div class="half relative">
+        <ButtonGroup class="absolute top-5 left-5">
+            <GradientButton shadow color="purple" on:click={() => setModel(0)}>Femme</GradientButton>
+            <GradientButton shadow color="purple" on:click={() => setModel(1)}>Homme</GradientButton>
         </ButtonGroup>
         <Canvas>
             <Model {model}/>
