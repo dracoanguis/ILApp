@@ -5,10 +5,8 @@
     import { ButtonGroup, GradientButton } from 'flowbite-svelte';
     import { writable } from 'svelte/store';
 
-    // Create a writable store to hold the model value
     let model = writable(0);
 
-    // Function to handle button clicks
     function setModel(value: number) {
         model.set(value);
     }

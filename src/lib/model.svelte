@@ -10,12 +10,10 @@
     let model_path = ["/female_base_mesh/scene.gltf", "/male_base_mesh/scene.gltf"];
     let modelIndex = 0; 
 
-    // Subscribe to the model store
     const unsubscribe = model.subscribe(value => {
         modelIndex = value;
     });
 
-    // Cleanup on component destroy
     onDestroy(() => {
         unsubscribe();
     });
