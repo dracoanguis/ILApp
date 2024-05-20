@@ -1,22 +1,11 @@
 <script lang="ts">
-    import { Canvas, T } from "@threlte/core";
+    import { T } from "@threlte/core";
     import { GLTF, Grid, Gizmo, OrbitControls } from "@threlte/extras";
-    import { onDestroy } from 'svelte';
-    import { get } from 'svelte/store';
-    import type { Writable } from 'svelte/store';
 
-    export let model: Writable<number>;
+    export let model = 0;
 
     let model_path = ["/female_base_mesh/scene.gltf", "/male_base_mesh/scene.gltf"];
-    let modelIndex = 0; 
 
-    const unsubscribe = model.subscribe(value => {
-        modelIndex = value;
-    });
-
-    onDestroy(() => {
-        unsubscribe();
-    });
 </script>
 
 <Gizmo />
@@ -32,4 +21,4 @@
 <T.AmbientLight intensity={3} color={"lightBlue"} />
 <T.DirectionalLight position={[4, 10, 4]} color={"lightBlue"} intensity={10} />
 <Grid type={"polar"} maxRadius={3} />
-<GLTF url="{model_path[modelIndex]}" castShadow />
+<GLTF url="{model_path[model]}" castShadow />
