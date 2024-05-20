@@ -3,14 +3,19 @@
 	import '../app.pcss';
 
 	let menu = [
-		{name: "Chat", href: "/chat"}
-	]
+		{name: "Chat", href: "/"}
+	];
 
 </script>
 
-<Navbar class="bg-purple-700" style="height: 9vh;">
+<svelte:head>
+	<title>Ivabot</title>
+</svelte:head>
+
+<Navbar class="bg-purple-700" style="max-height: 9vh;">
 	<NavBrand href="/">
-		<p class="text-3xl font-bold text-white">Nom trop stylé++</p>
+		<img src="/ivabot.svg" alt="" style="height: 5vh;"/>
+		<p class="text-3xl font-bold text-white">IvaBot</p>
 	</NavBrand>
 	<div class="flex">
 		<NavUl>
