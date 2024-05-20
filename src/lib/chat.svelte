@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ArrowKeyRight, Button, Card, Input } from "flowbite-svelte";
+    import { ArrowKeyRight, Button, Card, GradientButton, Input } from "flowbite-svelte";
 
     let message_list: [number,string][] = [
         [0, "Hello, I’m IvaBot! 👋 I’m your personal shopping assistant. How can I help you?"],
@@ -11,7 +11,7 @@
 
 
 <Card class="shadow-md m-10 max-w-full flex-col justify-between">
-    <div class="flex flex-col">
+    <div class="flex flex-col flex-wrap">
         {#each message_list as message}
             {#if message[0] == 0}
                 <Card class="my-2">
@@ -24,10 +24,10 @@
             {/if}
         {/each}
     </div>
-    <div class="flex flex-row my-2">
-        <Input placeholder="Your message"/>
-        <Button pill={true} color="purple">
-            <ArrowKeyRight/>
-        </Button>
+    <div class="flex flex-row my-2 gap-5">
+        <Input placeholder="Your message" color=""/>
+        <GradientButton shadow color="purple" pill>
+            Send
+        </GradientButton>
     </div>
 </Card>

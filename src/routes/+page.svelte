@@ -27,5 +27,6 @@
     .half {
         width: 50vw;
         height: 91vh;
+        /* max-height: 91vh; */
     }
 </style>
