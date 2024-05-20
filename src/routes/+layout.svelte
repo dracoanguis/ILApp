@@ -3,7 +3,7 @@
 	import '../app.pcss';
 
 	let menu = [
-		{name: "Chat", href: "/"}
+		{name: "Home", href: "/"}
 	];
 
 </script>
